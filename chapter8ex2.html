@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Open new window"
+    onclick='new_win()';
+    
+    <input type="button" value="Move To" onclick="moveTo(10,10)">
+    <input type="button" value="Move By" onclick="moveBy(500,500)">
+
+    <script>
+        function new_win(){
+            var win=window.open("www.wox.com","woxwin","resizable=yes,menu=yes");
+            win.resizeTo(300,300);
+            win.moveTo(200,200);
+        }
+    </script>
+</body>
+</html>
